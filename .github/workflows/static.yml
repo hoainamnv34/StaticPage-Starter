@@ -31,8 +31,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: ls
-        run: ls
+      - name: build
+        run: echo "build code"
+      - name: test
+        run: echo "test"
+      - name: push to docker hub
+        run: echo "push docker hub"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
